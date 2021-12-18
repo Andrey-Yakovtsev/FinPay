@@ -21,7 +21,7 @@ def delete_unclosed_brackets_content(expression):
 
 def delete_unclosed_brackets_content_and_close(expression):
     '''
-    Но предыдущий пример не имеет разумного применение, т.к. скобку все равно надо закрывать.
+    Но предыдущий пример не имеет разумного применения, т.к. скобку все равно надо закрывать.
     Поэтому без regexp можно втупую плюсануть
     '''
 
@@ -32,12 +32,17 @@ def delete_unclosed_brackets_with_regexp(expression):
     '''
     Проверка  скобок регекспом
     '''
-    result = re.compile() #TODO Долелать
-
-    print(result)
+    pattern = re.compile('.*[\(].*[\)]')   # TODO REGEXPS
+    result = re.findall(pattern, expression)
+    print(f'Regexp => {result[0]}')
 
 
 
 if __name__ == '__main__':
-    delete_unclosed_brackets_content('esdfd((esdf)(esdf')
-    delete_unclosed_brackets_content_and_close('esdfd((esdf)(esdf')
+
+    expression = 'esdfd((esdf)(esdf'
+
+    delete_unclosed_brackets_content(expression)
+    delete_unclosed_brackets_content_and_close(expression)
+    delete_unclosed_brackets_with_regexp(expression)
+
