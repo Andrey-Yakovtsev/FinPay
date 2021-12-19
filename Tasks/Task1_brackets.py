@@ -32,7 +32,7 @@ def delete_unclosed_brackets_with_regexp(expression):
     '''
     Проверка  скобок регекспом
     '''
-    pattern = re.compile('.*[\(].*[\)]')   # TODO REGEXPS
+    pattern = re.compile('.*[\(].*[\)]')
     result = re.findall(pattern, expression)
     print(f'Regexp => {result[0]}')
 
