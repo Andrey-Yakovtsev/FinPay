@@ -20,3 +20,9 @@ SELECT COUNT(id) FROM Items WHERE status=7 LEFT JOIN Items ON Items.user_id WHER
 '''
 
 SELECT COUNT(id) FROM Items WHERE status=7 AND status=3 LEFT JOIN Items ON Items.user_id WHERE Items.user_id IN phones.users
+
+
+
+'''
+This text for commit which will be deleted after
+'''

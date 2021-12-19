@@ -46,3 +46,6 @@ if __name__ == '__main__':
     delete_unclosed_brackets_content_and_close(expression)
     delete_unclosed_brackets_with_regexp(expression)
 
+'''
+This text for commit which will be deleted after
+'''

@@ -91,3 +91,8 @@ What is the correct field definition?
 Ответ ==> ii.
 birthday = models.DateField(null=False, blank=True) 
 '''
+
+
+'''
+This text for commit which will be deleted after
+'''
